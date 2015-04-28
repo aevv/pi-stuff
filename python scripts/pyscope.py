@@ -53,7 +53,7 @@ class pyscope:
 			pygame.display.update()
 			font = pygame.font.Font(None, 50)
 			now = datetime.datetime.now()
-			time_text = "{0}:{1}:{2:02d}".format(now.hour, now.minute, now.second)
+			time_text = "{0:02d}:{1:02d}:{2:02d}".format(now.hour, now.minute, now.second)
 			text = font.render(time_text, 0, (0, 0, 0))
 			text_pos = text.get_rect()
 			self.screen.blit(text, text_pos)			
